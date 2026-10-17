@@ -4,9 +4,37 @@
 }
 
 body {
-    background-image: url("../images/background-portfolio.webp");
+    background-image: url("../images/portfolio_background_computer.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    margin-top: 4vw;
+    font-size: 5vw;
+
+    /* first font */
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.text {
+    color: whitesmoke;
+    font-size: 1vw;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* @media (max-width: 1023px) {
+    body {
+        Landscape mode
+    }
+} */

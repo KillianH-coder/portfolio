@@ -14,8 +14,11 @@ body {
 .title {
     display: flex;
     justify-content: center;
-    color: whitesmoke;
-    margin-top: 4vw;
+}
+
+.name {
+    /* required for transform to work */
+    display: inline-block;
     font-size: 5vw;
 
     /* first font */
@@ -23,6 +26,45 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+
+    /* 2 colors; the first color is repeated at the end so the loop is seamless */
+    background: linear-gradient(90deg, #35c6ff, #ffffff, #35c6ff);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    animation:
+        flow 6s linear infinite,
+        bounce 6s ease-in-out infinite;
+}
+
+@keyframes flow {
+    from {
+        background-position: 200% 0;
+    }
+
+    to {
+        background-position: 0 0;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .slow {
+        animation: none;
+    }
 }
 
 .text {

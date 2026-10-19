@@ -1,0 +1,15 @@
+theme: espace/système solaire/planètes/étoiles-bleu marine/blanc/jaune
+projets école:
+- forum ? (SQLite)
+- groupie tracker ? (API)
+projet perso:
+- world cup (go-manipulation de maps-génération de nombres random-algo de calcul)
+- tournament bracket generator (site web en go uniquement-manipulation de tableaux)
+- sport ? ("conversation" avec le terminal-go-calcul-"base de donnée" json)
+languages connus:
+golang-js ?
+liens:
+- Linkedin
+- Github
+Dessins:
+- ?

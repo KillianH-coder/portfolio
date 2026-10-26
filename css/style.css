@@ -39,6 +39,16 @@ body {
         bounce 6s ease-in-out infinite;
 }
 
+.description {
+    color: whitesmoke;
+    font-size: 1.5vw;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0 20%;
+    text-align: justify;
+}
+
 @keyframes flow {
     from {
         background-position: 200% 0;
@@ -57,7 +67,7 @@ body {
     }
 
     50% {
-        transform: translateY(-12px);
+        transform: translateY(-8px);
     }
 }
 
@@ -65,14 +75,6 @@ body {
     .slow {
         animation: none;
     }
-}
-
-.text {
-    color: whitesmoke;
-    font-size: 1vw;
-    font-family: "Space Mono", monospace;
-    font-weight: 400;
-    font-style: italic;
 }
 
 /* @media (max-width: 1023px) {

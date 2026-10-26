@@ -1,4 +1,4 @@
-theme: espace/système solaire/planètes/étoiles-bleu marine/blanc/jaune
+theme: espace/planètes/étoiles-bleu marine/blanc/jaune
 projets école:
 - forum ? (SQLite)
 - groupie tracker ? (API)

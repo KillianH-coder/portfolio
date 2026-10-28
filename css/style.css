@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color1: rgb(0, 0, 150);
+    --color2: rgb(255, 250, 110);
+}
+
 body {
     background-image: url("../images/portfolio_background_computer.webp");
     background-size: cover;
@@ -11,9 +16,26 @@ body {
     background-attachment: fixed;
 }
 
+#page {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2;
+    color: whitesmoke;
+}
+
 .title {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5vw;
 }
 
 .name {
@@ -41,7 +63,8 @@ body {
 
 .description {
     color: whitesmoke;
-    font-size: 1.5vw;
+    -webkit-text-stroke: 0.5px blue;
+    font-size: 1.6vw;
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: italic;
@@ -77,8 +100,113 @@ body {
     }
 }
 
-/* @media (max-width: 1023px) {
-    body {
-        Landscape mode
-    }
-} */
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 15vw);
+    grid-template-rows: repeat(6, 15vw);
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    gap: 2.5vw;
+    /* debug */
+    /* border: 1px solid red; */
+}
+
+.planet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15vw;
+    width: 15vw;
+    border: 5px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 50%;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    box-shadow:
+        0 0 10px white,
+        0 0 20px white,
+        0 0 30px white;
+    background-color: var(--color1);
+}
+
+.planet-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15vw;
+    width: 15vw;
+    border: 5px solid whitesmoke;
+    border-radius: 50%;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2vw;
+    box-shadow:
+        0 0 10px white,
+        0 0 20px white,
+        0 0 30px white;
+    -webkit-text-stroke: 2px white;
+    background-color: var(--color2);
+}
+
+.subtitle {
+    display: flex;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    -webkit-text-stroke: 1px black;
+}
+
+.sub-subtitle {
+    -webkit-text-stroke: 1px black;
+    font-size: 0.8vw;
+}
+
+#school {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#forum {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#groupie {
+    grid-column: 5;
+    grid-row: 2;
+}
+
+#atm {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#personal {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+#world-cup {
+    grid-column: 3;
+    grid-row: 6;
+}
+
+#tournament {
+    grid-column: 5;
+    grid-row: 4;
+}
+
+#sport {
+    grid-column: 1;
+    grid-row: 5;
+}

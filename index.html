@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/pop-up.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/drawing.css">
     <script src="js/script.js" defer></script>
 
     <!-- First font -->
@@ -22,9 +27,13 @@
 <body>
 
     <header id="header">
-        <a>Email</a>
-        <a>GitHub</a>
-        <a>CV</a>
+        <a class="logo" href="#top">Killian Hoarau</a>
+
+        <nav aria-label="Liens principaux">
+            <a href="mailto:k.hoarau27400@gmail.com">Email</a>
+            <a href="https://github.com/KillianH-coder/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://killianh-coder.github.io/CV/" target="_blank" rel="noopener noreferrer">CV</a>
+        </nav>
     </header>
 
     <div id="page">
@@ -39,7 +48,7 @@
             </i>
         </div>
 
-        <div class="container">
+        <div class="grid">
 
             <svg class="trails" viewBox="0 0 85 102.5" aria-hidden="true">
                 <!-- from #school -->
@@ -88,30 +97,32 @@
             </div>
         </div>
 
-        <div class="skills">
-            <h2 id="skills-title" class="sub-subtitle">Hard skills</h2>
+        <div class="skills-header">
+            <h2 id="skills-title" class="sub-subtitle">Compétences</h2>
             <div class="shooting-star"></div>
+        </div>
 
+        <div class="skills">
             <p class="skill">Golang</p>
             <p class="skill">JavaScript</p>
             <p class="skill">Python</p>
             <p class="skill">C/C++</p>
             <p class="skill">HTML/CSS</p>
-            <p class="skill">Git/GitHub/Gitea</p>
+            <p class="skill">Git/GitHub</p>
             <p class="skill">Docker</p>
             <p class="skill">SQLite/JSON</p>
         </div>
 
-        <div class="container">
-            <div>
-                Dessins
-            </div>
+        <div class="others">
+            <h2 id="others-title" class="sub-subtitle">Autres</h2>
         </div>
 
-        <dialog id="project-modal">
+        <a class="drawings" href="drawings.html">Mes dessins</a>
+
+        <dialog id="project-modal" autofocus>
             <button id="modal-close" aria-label="Close">&times;</button>
             <h2 id="modal-title"></h2>
-            <p id="modal-tags"></p>
+            <p id="modal-tags" class="sub-subtitle"></p>
             <p id="modal-description"></p>
             <ul id="modal-features"></ul>
             <div class="modal-links">

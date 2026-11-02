@@ -3,8 +3,8 @@
 const projects = {
     forum: {
         description:
-            "Gestion d'une base de données avec SQLite. " +
-            "Comptes utilisateurs et authentification. " +
+            "Gestion d'une base de données avec SQLite.\n" +
+            "Comptes utilisateurs et authentification.\n" +
             "Postes et commentaires pour les utilisateurs.",
         features: ["Comptes et authentification", "Postes et commentaires", "Base SQLite"],
         github: "",
@@ -12,44 +12,44 @@ const projects = {
     },
     groupie: {
         description:
-            "Utilisation d'une API donnée, barre de recherche, " +
-            "affichage des données et des informations associées.",
+            "Utilisation d'une API donnée.\n" +
+            "Barre de recherche.\n" +
+            "Affichage des données et des informations associées.",
         features: ["Appels API", "Barre de recherche", "Affichage des données"],
-        github: "",
+        github: "https://github.com/KillianH-coder/groupie-tracker-search-bar",
         demo: ""
     },
     atm: {
         description:
-            "Programme qui simule un distributeur automatique. " +
-            "Complétion de code existant, données dans des fichiers texte, " +
-            "communication avec le terminal.",
+            "Programme qui simule un distributeur automatique.\n" +
+            "Complétion de code existant.\n" +
+            "Données dans des fichiers texte, communication avec le terminal.",
         features: ["Données dans des fichiers texte", "Interaction terminal"],
-        github: "",
+        github: "https://github.com/KillianH-coder/atm-management-system",
         demo: ""
     },
     "world-cup": {
         description:
-            "Simule une Coupe du monde, des phases de poules jusqu'à la finale. " +
+            "Simule une Coupe du monde, des phases de poules jusqu'à la finale.\n" +
             "Résultats écrits dans des fichiers texte.",
         features: ["Phases de poules", "Phases finales", "Résultats en fichiers texte"],
-        github: "",
+        github: "https://github.com/KillianH-coder/world-cup",
         demo: ""
     },
     tournament: {
         description:
-            "Application web pour créer des arbres de tournois et " +
-            "suivre l'avancement des matchs en direct.",
+            "Application web pour créer des arbres de tournois.\n" +
+            "Suivi de l'avancement des matchs en direct.",
         features: ["Création d'arbres de tournoi", "Suivi des matchs en direct"],
-        github: "",
+        github: "https://github.com/KillianH-coder/tournament-bracket-generator",
         demo: ""
     },
     sport: {
         description:
-            "Programme à usage personnel pour suivre ses entraînements sportifs. " +
-            "Il simule un jeu vidéo avec un niveau, un calendrier et un profil " +
-            "pour voir sa progression.",
+            "Programme à usage personnel pour suivre ses entraînements sportifs.\n" +
+            "Il simule un jeu vidéo avec un niveau, un calendrier et un profil pour voir sa progression.",
         features: ["Niveau, calendrier et profil", "Sauvegarde en JSON", "Interaction terminal"],
-        github: "",
+        github: "https://github.com/KillianH-coder/sport",
         demo: ""
     }
 };

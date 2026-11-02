@@ -1,0 +1,158 @@
+.grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 15vw);
+    grid-template-rows: repeat(6, 15vw);
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    gap: 2.5vw;
+}
+
+.trails {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85vw;
+    height: 102.5vw;
+    pointer-events: none;
+}
+
+.trails line {
+    stroke: rgba(245, 245, 245, 0.7);
+    stroke-width: 0.4;
+    stroke-linecap: round;
+    stroke-dasharray: 0 0.8;
+}
+
+.planet,
+.planet-title {
+    position: relative;
+    z-index: 1;
+}
+
+.planet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15vw;
+    width: 15vw;
+    cursor: pointer;
+    border: 5px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 50%;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    box-shadow:
+        0 0 10px white,
+        0 0 20px white,
+        0 0 30px white;
+    background:
+        radial-gradient(circle at 30% 30%,
+            rgb(90, 90, 255) 0%,
+            var(--color1) 45%,
+            rgb(0, 0, 40) 100%);
+    animation: bounce 5s ease-in-out infinite;
+    transition: 0.2s;
+}
+
+.planet:hover {
+    box-shadow:
+        0 0 20px white,
+        0 0 30px white,
+        0 0 40px white,
+        0 0 50px white;
+}
+
+.planet-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15vw;
+    width: 15vw;
+    border: 5px solid whitesmoke;
+    border-radius: 50%;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2vw;
+    box-shadow:
+        0 0 10px white,
+        0 0 20px white,
+        0 0 30px white;
+    /* -webkit-text-stroke: 2px white; */
+    background:
+        radial-gradient(circle at 30% 30%,
+            #fffde0 0%,
+            var(--color2) 45%,
+            rgb(170, 150, 20) 100%);
+    transition: 0.2s;
+}
+
+#school {
+    grid-column: 3;
+    grid-row: 3;
+    position: relative;
+}
+
+#school::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2.5vw;
+    width: 0.5vw;
+    background: radial-gradient(circle, whitesmoke 40%, transparent 45%);
+    background-size: 0.5vw 0.8vw;
+}
+
+#forum {
+    grid-column: 2;
+    grid-row: 1;
+    animation-delay: -0.5s;
+}
+
+#groupie {
+    grid-column: 5;
+    grid-row: 2;
+    animation-delay: -1s;
+}
+
+#atm {
+    grid-column: 1;
+    grid-row: 3;
+    animation-delay: -1.5s;
+}
+
+#personal {
+    grid-column: 3;
+    grid-row: 4;
+    animation-delay: -2s;
+}
+
+#world-cup {
+    grid-column: 3;
+    grid-row: 6;
+    animation-delay: -2.5s;
+}
+
+#tournament {
+    grid-column: 5;
+    grid-row: 4;
+    animation-delay: -3s;
+}
+
+#sport {
+    grid-column: 1;
+    grid-row: 5;
+    animation-delay: -3.5s;
+}

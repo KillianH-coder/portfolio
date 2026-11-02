@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 
     <!-- First font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +40,19 @@
         </div>
 
         <div class="container">
+
+            <svg class="trails" viewBox="0 0 85 102.5" aria-hidden="true">
+                <!-- from #school -->
+                <line x1="42.5" y1="42.5" x2="25" y2="7.5" /> <!-- school → forum -->
+                <line x1="42.5" y1="42.5" x2="77.5" y2="25" /> <!-- school → groupie -->
+                <line x1="42.5" y1="42.5" x2="7.5" y2="42.5" /> <!-- school → atm -->
+
+                <!-- from #personal -->
+                <line x1="42.5" y1="60" x2="42.5" y2="95" /> <!-- personal → world-cup -->
+                <line x1="42.5" y1="60" x2="77.5" y2="60" /> <!-- personal → tournament -->
+                <line x1="42.5" y1="60" x2="7.5" y2="77.5" /> <!-- personal → sport -->
+            </svg>
+
             <div id="school" class="planet-title">Projets d'école</div>
 
             <div id="forum" class="planet">
@@ -129,6 +143,18 @@
                 Dessins
             </div>
         </div>
+
+        <dialog id="project-modal">
+            <button id="modal-close" aria-label="Close">&times;</button>
+            <h2 id="modal-title"></h2>
+            <p id="modal-tags"></p>
+            <p id="modal-description"></p>
+            <ul id="modal-features"></ul>
+            <div class="modal-links">
+                <a id="modal-github" href="#" target="_blank" rel="noopener">GitHub</a>
+                <a id="modal-demo" href="#" target="_blank" rel="noopener">Demo</a>
+            </div>
+        </dialog>
 
     </div>
 

@@ -31,6 +31,11 @@
     margin: 0 auto 10vw auto;
     color: whitesmoke;
     background-color: blue;
+    background:
+        radial-gradient(circle at 30% 30%,
+            rgb(100, 100, 255) 0%,
+            blue 45%,
+            rgb(0, 0, 150) 100%);
     border: 3px solid white;
     box-shadow:
         0 0 10px white,
@@ -51,4 +56,38 @@
         0 0 30px white,
         0 0 40px white,
         0 0 50px white;
+}
+
+#draw-page {
+    display: flex;
+    justify-content: center;
+    margin: 0 5vw;
+    gap: 5vw;
+}
+
+#left,
+#right {
+    display: flex;
+    height: 100vh;
+    width: 40%;
+    --rail: linear-gradient(to right,
+            #8a6a00 0%,
+            #d4af37 30%,
+            #d4af37 44%,
+            #fff6d6 50%,
+            #d4af37 56%,
+            #d4af37 70%,
+            #8a6a00 100%);
+    background:
+        var(--rail) left / 10px 100% no-repeat border-box,
+        var(--rail) right / 10px 100% no-repeat border-box;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
+}
+
+#left {
+    justify-content: flex-start;
+}
+
+#right {
+    justify-content: flex-end;
 }

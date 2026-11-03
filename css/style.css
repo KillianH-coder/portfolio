@@ -22,11 +22,84 @@ body {
     gap: 5vw;
 }
 
-#header {
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
-    font-size: 2;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    background: rgba(6, 10, 34, 0.7);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(245, 245, 245, 0.15);
+}
+
+.header .logo {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
     color: whitesmoke;
+    text-decoration: none;
+}
+
+.header nav {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.header nav a {
+    padding: 0.4rem 1rem;
+    border: 1px solid rgba(245, 245, 245, 0.6);
+    border-radius: 999px;
+    color: whitesmoke;
+    font-family: "Space Mono", monospace;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.header nav a:hover,
+.header nav a:focus-visible {
+    background: whitesmoke;
+    color: rgb(5, 5, 40);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+.title {
+    /* required for transform to work */
+    display: inline-block;
+    font-size: 5vw;
+
+    /* first font */
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    /* 2 colors; the first color is repeated at the end so the loop is seamless */
+    background: linear-gradient(90deg, #35c6ff, #ffffff, #35c6ff);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    animation:
+        flow 6s linear infinite,
+        bounce 6s ease-in-out infinite;
+}
+
+.subtitle {
+    display: flex;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    /* -webkit-text-stroke: 1px black; */
+}
+
+.sub-subtitle {
+    /* -webkit-text-stroke: 1px black; */
+    font-size: 0.8vw;
 }
 
 @keyframes flow {
@@ -82,18 +155,4 @@ body {
     .planet {
         animation: none;
     }
-}
-
-.subtitle {
-    display: flex;
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    /* -webkit-text-stroke: 1px black; */
-}
-
-.sub-subtitle {
-    /* -webkit-text-stroke: 1px black; */
-    font-size: 0.8vw;
 }

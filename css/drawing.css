@@ -68,8 +68,11 @@
 #left,
 #right {
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
     width: 40%;
+    gap: 5vw;
     --rail: linear-gradient(to right,
             #8a6a00 0%,
             #d4af37 30%,
@@ -90,4 +93,74 @@
 
 #right {
     justify-content: flex-end;
+}
+
+.drawing-title {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+.drawing {
+    display: flex;
+    width: 50%;
+    height: auto;
+    cursor: zoom-in;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.drawing:hover,
+.drawing:focus-visible {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+#drawing-modal {
+    margin: auto;
+    padding: 0;
+    border: none;
+    background: none;
+    max-width: 95vw;
+    max-height: 95dvh;
+    overflow: visible;
+}
+
+#drawing-modal:focus {
+    outline: none;
+}
+
+#drawing-modal::backdrop {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(3px);
+}
+
+#drawing-big {
+    display: block;
+    max-width: 95vw;
+    max-height: 90dvh;
+    object-fit: contain;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+#drawing-close {
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 3rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+#drawing-close:hover,
+#drawing-close:focus-visible {
+    color: white;
+    text-shadow: 0 0 8px white, 0 0 16px white;
 }

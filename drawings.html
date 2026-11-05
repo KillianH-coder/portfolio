@@ -8,21 +8,41 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/drawing.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script src="js/script_drawing.js" defer></script>
 </head>
 
 <body>
 
     <header class="header">
-        <a class="logo" href="/index.html">Killian Hoarau</a>
+        <a class="logo" href="portfolio/">Killian Hoarau</a>
     </header>
 
     <div id="draw-page">
 
-        <div id="left"></div>
+        <div id="left">
+            <h2 class="drawing-title">Traditionnel</h2>
+            <img class="drawing" src="images/traditional/flower.jpg" alt="My drawing">
+            <img class="drawing" src="images/traditional/girl-in-the-rain.jpg" alt="My drawing">
+            <img class="drawing" src="images/traditional/sushis.jpg" alt="My drawing">
+        </div>
 
-        <div id="right"></div>
+        <div id="right">
+            <h2 class="drawing-title">Digital</h2>
+            <img class="drawing" src="images/digital/birds.jpg" alt="My drawing">
+            <img class="drawing" src="images/digital/the_photo.jpg" alt="My drawing">
+            <img class="drawing" src="images/digital/mega-staross.jpg" alt="My drawing">
+        </div>
 
     </div>
+
+    <dialog id="drawing-modal" tabindex="-1">
+        <button id="drawing-close" type="button" aria-label="Fermer">&times;</button>
+        <img id="drawing-big" src="" alt="">
+    </dialog>
 
 </body>
 
